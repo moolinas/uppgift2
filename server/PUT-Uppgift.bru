@@ -1,0 +1,22 @@
+meta {
+  name: PUT-Uppgift
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:3000/inventory/11
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "amount": 12
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
