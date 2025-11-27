@@ -1,0 +1,16 @@
+meta {
+  name: GET suppliersProducts
+  type: http
+  seq: 9
+}
+
+get {
+  url: http://localhost:4000/suppliers/1/products
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

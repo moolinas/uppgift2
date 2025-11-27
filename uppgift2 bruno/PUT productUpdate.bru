@@ -1,0 +1,26 @@
+meta {
+  name: PUT productUpdate
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://localhost:4000/products/id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "apple",
+    "price": "5kr",      
+    "inStock": 12,   
+    "category": "fruits",
+    "supplier_id": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,26 @@
+meta {
+  name: POST products
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:4000/products
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "banana",
+    "price": "4kr",      
+    "inStock": 15,   
+    "category": "fruits",
+    "supplier_id": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
